@@ -55,16 +55,8 @@ type DeleteFeedFollowsParams struct {
 }
 
 func (q *Queries) DeleteFeedFollows(ctx context.Context, arg DeleteFeedFollowsParams) error {
-	result, err := q.db.ExecContext(ctx, deleteFeedFollows, arg.ID, arg.UserID)
-	if err != nil {
-        return err
-    }
-    rowsAffected, err := result.RowsAffected()
-    if err != nil {
-        return err
-    }
-    println("Deleted %d feed follows\n", rowsAffected)
-    return nil
+	_, err := q.db.ExecContext(ctx, deleteFeedFollows, arg.ID, arg.UserID)
+	return err
 }
 
 const getFeedFollows = `-- name: GetFeedFollows :many
