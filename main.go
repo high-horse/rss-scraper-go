@@ -15,7 +15,7 @@ import (
 )
 
 type apiConfig struct {
-    DB *database.Queries
+	DB *database.Queries
 }
 
 func main() {
@@ -42,7 +42,7 @@ func main() {
 	}
 
 	apiCfg := apiConfig{
-		DB :  database.New(conn),
+		DB: database.New(conn),
 	}
 
 	router := chi.NewRouter()
@@ -63,6 +63,7 @@ func main() {
 	v1Router.Get("/health", handlerReady)
 	v1Router.Get("/err", handleErr)
 	v1Router.Post("/user", apiCfg.handlerCreateuser)
+	v1Router.Get("/user", apiCfg.handlerGetUser)
 
 	router.Mount("/v1", v1Router)
 
