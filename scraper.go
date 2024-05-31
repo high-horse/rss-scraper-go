@@ -5,6 +5,7 @@ import (
 	"database/sql"
 	"log"
 	"rss-scraper/internal/database"
+	"strings"
 	"sync"
 	"time"
 
@@ -78,8 +79,11 @@ func scrapeFeed(db *database.Queries, wg *sync.WaitGroup, feed database.Feed) {
 			})
 
 		if err != nil {
+			if strings.Contains(err.Error(), "duplicate key") {
+				continue
+			}
 			log.Println("failed to create post :", err)
 		}
 	}
-	log.Printf("feed %s collecte, %v post found", feed.Name, len(rssFeed.Channel.Item))
+	log.Printf("feed %s collected, %v post found", feed.Name, len(rssFeed.Channel.Item))
 }
