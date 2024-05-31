@@ -1,0 +1,162 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Rss scraping",
+    "collectionId": "cbeba87e-225b-4151-9f71-84b236ffa778",
+    "dateExported": "2024-05-31T02:34:07.885Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ca477c54-ef0f-40a5-ad2d-62a7ef20847b",
+            "colId": "cbeba87e-225b-4151-9f71-84b236ffa778",
+            "containerId": "",
+            "name": "feed-follow delete",
+            "url": "127.0.0.1:8000/v1/feed_follow/a8f3ae25-378a-4e7a-86c3-6b2c9a1970bf",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2024-05-31T02:32:30.309Z",
+            "modified": "2024-05-31T02:32:30.309Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "ApiKey 4533252779887751c4de4d4380de66c87e972078751e53768a3fa8b275eab133"
+                }
+            ]
+        },
+        {
+            "_id": "29eaa2b5-cca9-4ebf-b6b9-5b605f730df0",
+            "colId": "cbeba87e-225b-4151-9f71-84b236ffa778",
+            "containerId": "",
+            "name": "feed-follow get",
+            "url": "127.0.0.1:8000/v1/feed_follow",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-05-31T02:32:38.904Z",
+            "modified": "2024-05-31T02:32:38.904Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "ApiKey 4533252779887751c4de4d4380de66c87e972078751e53768a3fa8b275eab133"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"feed_id\" : \"a804e0ea-6972-44c3-b20f-a21790e03fcb\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e071855f-5f72-4767-90a9-1d73127d6dbb",
+            "colId": "cbeba87e-225b-4151-9f71-84b236ffa778",
+            "containerId": "",
+            "name": "feed get",
+            "url": "127.0.0.1:8000/v1/feed",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-05-31T02:32:45.855Z",
+            "modified": "2024-05-31T02:32:45.855Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "ApiKey 4533252779887751c4de4d4380de66c87e972078751e53768a3fa8b275eab133"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"lane's blog\",\n  \"url\" : \"https://www.wagslane.dev/index.xml\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "09d36510-8fb2-4c92-9f37-394019dd535a",
+            "colId": "cbeba87e-225b-4151-9f71-84b236ffa778",
+            "containerId": "",
+            "name": "feed-follow create",
+            "url": "127.0.0.1:8000/v1/feed_follow",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-05-31T02:33:10.963Z",
+            "modified": "2024-05-31T02:33:10.963Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "ApiKey 4533252779887751c4de4d4380de66c87e972078751e53768a3fa8b275eab133"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"feed_id\" : \"d4383501-a67d-4864-821c-51b25eb6f904\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "95962471-f788-4d03-8cd9-9917740dc97f",
+            "colId": "cbeba87e-225b-4151-9f71-84b236ffa778",
+            "containerId": "",
+            "name": "feed create",
+            "url": "127.0.0.1:8000/v1/feed",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-05-31T02:33:19.458Z",
+            "modified": "2024-05-31T02:33:19.459Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "ApiKey 4533252779887751c4de4d4380de66c87e972078751e53768a3fa8b275eab133"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"lane's blog\",\n  \"url\" : \"https://www.wagslane1.dev/index.xml\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "97a66a7a-978a-42e5-a6d7-ec8f4ac41137",
+            "colId": "cbeba87e-225b-4151-9f71-84b236ffa778",
+            "containerId": "",
+            "name": "get /",
+            "url": "127.0.0.1:8000/v1/err",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-05-31T02:33:26.105Z",
+            "modified": "2024-05-31T02:33:26.105Z",
+            "headers": []
+        },
+        {
+            "_id": "d0563992-637f-40e8-a600-800d3802423c",
+            "colId": "cbeba87e-225b-4151-9f71-84b236ffa778",
+            "containerId": "",
+            "name": "127.0.0.1:8000/v1/user",
+            "url": "127.0.0.1:8000/v1/user",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-05-31T02:33:32.348Z",
+            "modified": "2024-05-31T02:33:32.348Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"user001\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "68bef1fc-67d7-425a-9c62-bd43de5e01e0",
+            "colId": "cbeba87e-225b-4151-9f71-84b236ffa778",
+            "containerId": "",
+            "name": "get user",
+            "url": "127.0.0.1:8000/v1/user",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-05-31T02:33:40.337Z",
+            "modified": "2024-05-31T02:33:40.337Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "ApiKey 4533252779887751c4de4d4380de66c87e972078751e53768a3fa8b275eab133"
+                }
+            ]
+        }
+    ],
+    "ref": "uag4DepkUE7XRD1OrI9JAiwyS69m_Cxx8QH6m-yW2n6TWqP-VfotDKW89DuxuokcPTbDE17kb2w4ZbcKD0VeBg"
+}
