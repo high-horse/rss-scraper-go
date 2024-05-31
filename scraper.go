@@ -50,8 +50,8 @@ func scrapeFeed(db *database.Queries, wg *sync.WaitGroup, feed database.Feed) {
 		return
 	}
 
-	fot _, item := range rssFeed.Channel.Item {
-		log.Println("Post found ", item,Title)
+	for _, item := range rssFeed.Channel.Item {
+		log.Println("Post found ", item.Title, " on feed ", feed.Name)
 	}
 	log.Printf("feed %s collecte, %v post found", feed.Name, len(rssFeed.Channel.Item))
 }
